@@ -109,6 +109,7 @@ L.TileLayer.include({
 				var url = URL.createObjectURL(blob);
 
 				if (
+					navigator.onLine &&
 					Date.now() > data.timestamp + this.options.cacheMaxAge &&
 					!this.options.useOnlyCache
 				) {
@@ -213,7 +214,7 @@ L.TileLayer.include({
 						}
 					})
 					.catch(function() {
-						// Saving the tile to the cache might have failed, 
+						// Saving the tile to the cache might have failed,
 						// but the tile itself has been loaded.
 						if (done) {
 							done();

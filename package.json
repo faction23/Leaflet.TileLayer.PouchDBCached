@@ -1,6 +1,6 @@
 {
   "name": "leaflet.tilelayer.pouchdbcached",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows all TileLayers to cache into PouchDB for offline use",
   "main": "L.TileLayer.PouchDBCached.js",
   "scripts": {
